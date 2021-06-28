@@ -1,7 +1,7 @@
-import { greet } from "./utils/greet";
+import AttendanceTracker from "./components/AttendanceTracker";
 
 function App(): JSX.Element {
-  return <h1>{greet("World")}</h1>;
+  return <AttendanceTracker />;
 }
 
 export default App;
