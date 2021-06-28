@@ -17,6 +17,8 @@ export default function AttendanceTracker(): JSX.Element {
 
   const handleResetAttendance = () => {
     setAttendanceCount(0);
+    // would be redundant to use setAttendanceCount(prev => 0)
+    // since 0 does not depend on the value of prev at all
   };
 
   if (attendanceCount < 0) {
