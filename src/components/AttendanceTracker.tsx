@@ -24,7 +24,6 @@ export default function AttendanceTracker(): JSX.Element {
   if (attendanceCount < 0) {
     return (
       <>
-        <h1>Attendance Tracker</h1>
         <p>Attendance count: {attendanceCount}</p>
         <p>Negative attendance? Are you sure?</p>
         <button onClick={handleResetAttendance}>Reset attendance</button>
@@ -33,7 +32,6 @@ export default function AttendanceTracker(): JSX.Element {
   } else {
     return (
       <>
-        <h1>Attendance Tracker</h1>
         <p>Attendance count: {attendanceCount}</p>
         <button onClick={handleRemoveAttendee}>-1</button>
         <button onClick={handleAddAttendee}>+1</button>
