@@ -26,6 +26,8 @@ export default function AttendanceTracker(): JSX.Element {
       <>
         <p>Attendance count: {attendanceCount}</p>
         <p>Negative attendance? Are you sure?</p>
+        <button onClick={handleRemoveAttendee}>-1</button>
+        <button onClick={handleAddAttendee}>+1</button>
         <button onClick={handleResetAttendance}>Reset attendance</button>
       </>
     );

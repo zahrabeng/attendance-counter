@@ -12,7 +12,8 @@ export default function AppHeader({ title }: AppHeaderProps): JSX.Element {
   } else {
     return (
       <header>
-        <h1>work-in-progress app</h1>
+        <h1>{title}</h1>
+        <p>(The title is a work-in-progress)</p>
       </header>
     );
   }
