@@ -1,6 +1,6 @@
 interface CopyrightNoticeProps {
   // ? makes a property optional: https://www.typescriptlang.org/docs/handbook/2/objects.html#optional-properties
-  author?: string;
+  author: string;
   year: number;
 }
 
@@ -9,6 +9,22 @@ export default function CopyrightNotice({
   year,
 }: CopyrightNoticeProps): JSX.Element {
   // truthiness check: https://developer.mozilla.org/en-US/docs/Glossary/Truthy
+
+  return (
+    <>
+    <p>
+      Copyright {year}, {author}
+      {author.length === 0 &&  <p>Copyright {year} (but to nobody in particular)</p>}
+    </p>
+    </>
+  );
+}
+
+
+
+
+
+/*
   if (author) {
     return (
       <>
@@ -25,3 +41,4 @@ export default function CopyrightNotice({
     );
   }
 }
+*/
